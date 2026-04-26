@@ -36,13 +36,13 @@ async function getFetchData(endPoint, city){
     return response.json()
 }
 function getweatherIcon(id){
-  if (id <= 232) return 'assets/weather/thunderstorm.svg'
-  if (id <= 321) return 'assets/weather/drizzle.svg'
-  if (id <= 531) return 'assets/weather/rain.svg'
-  if (id <= 622) return 'assets/weather/snow.svg'
-  if (id <= 781) return 'assets/weather/atmosphere.svg'
-  if (id <= 800) return 'assets/weather/clear.svg'
-  else return 'assets/weather/clouds.svg'
+  if (id <= 232) return 'assets/thunderstorm.svg'
+  if (id <= 321) return 'assets/drizzle.svg'
+  if (id <= 531) return 'assets/rain.svg'
+  if (id <= 622) return 'assets/snow.svg'
+  if (id <= 781) return 'assets/atmosphere.svg'
+  if (id <= 800) return 'assets/clear.svg'
+  else return 'assets/clouds.svg'
 }
 function getCurrentDate(){
   const currentDate = new Date()
